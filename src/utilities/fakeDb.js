@@ -4,8 +4,6 @@ const fakeDb = (id) => {
   const getStored = localStorage.getItem("shopping-cart");
   if (getStored) {
     shoppingCart = JSON.parse(getStored);
-  } else {
-    shoppingCart = {};
   }
 
   //set item to local storage
@@ -18,4 +16,16 @@ const fakeDb = (id) => {
   }
   localStorage.setItem("shopping-cart", JSON.stringify(shoppingCart));
 };
-export { fakeDb };
+
+//delete from local storages
+const removeFromDb = (id) => {
+  const getItem = localStorage.getItem("shopping-cart");
+  if (getItem) {
+    const shoppingCart = JSON.parse(getItem);
+    if (id in shoppingCart) {
+      delete shoppingCart[id];
+      localStorage.setItem("shopping-cart", JSON.stringify(shoppingCart));
+    }
+  }
+};
+export { fakeDb, removeFromDb };
