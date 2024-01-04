@@ -1,0 +1,12 @@
+[
+  { "id": 1, "name": "John Doe", "salary": 50000, "job": "Software Engineer" },
+  { "id": 2, "name": "Jane Smith", "salary": 60000, "job": "Data Scientist" },
+  { "id": 3, "name": "Bob Johnson", "salary": 55000, "job": "UX Designer" },
+  { "id": 4, "name": "Alice Williams", "salary": 70000, "job": "Product Manager" },
+  { "id": 5, "name": "Charlie Brown", "salary": 45000, "job": "QA Tester" },
+  { "id": 6, "name": "Eva Davis", "salary": 80000, "job": "Frontend Developer" },
+  { "id": 7, "name": "Frank White", "salary": 75000, "job": "Backend Developer" },
+  { "id": 8, "name": "Grace Turner", "salary": 52000, "job": "Marketing Specialist" },
+  { "id": 9, "name": "Henry Taylor", "salary": 67000, "job": "Project Manager" },
+  { "id": 10, "name": "Isabel Martinez", "salary": 48000, "job": "Graphic Designer" }
+]
