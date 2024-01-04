@@ -28,4 +28,11 @@ const removeFromDb = (id) => {
     }
   }
 };
-export { fakeDb, removeFromDb };
+
+const getTotalSalary = (salaries) => {
+  const reducers = (previous, current) => previous + current.salary;
+  const total = salaries.reduce(reducers, 0);
+  return total;
+};
+
+export { fakeDb, removeFromDb, getTotalSalary };
